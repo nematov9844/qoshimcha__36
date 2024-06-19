@@ -1,0 +1,116 @@
+
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$danger-color: #dc3545;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.new-task-container {
+  display: flex;
+  margin-bottom: 20px;
+
+  #new-task {
+    flex-grow: 1;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+  }
+
+  #add-task {
+    margin-left: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  .filter-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #fff;
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+
+    &.active {
+      background-color: $primary-color;
+      color: #fff;
+      border-color: $primary-color;
+    }
+
+    &:hover {
+      background-color: lighten($secondary-color, 40%);
+    }
+  }
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #e9ecef;
+
+  .task-checkbox {
+    margin-right: 12px;
+  }
+
+  label {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #343a40;
+
+    &.completed {
+      text-decoration: line-through;
+      color: $secondary-color;
+    }
+  }
+
+  .delete-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: $danger-color;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($danger-color, 10%);
+    }
+  }
+}

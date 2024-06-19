@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtered Dropdown</title>
+    <link rel="stylesheet" href="../css/search.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Filtered Dropdown</h1>
+
+      <div class="dropdown-wrapper">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search..."
+          onkeyup="filterFunction()"
+        />
+
+        <div class="dropdown">
+          <button onclick="btn()" class="dropdown-btn">Select an option</button>
+          <div class="dropdown-content">
+            <a href="#" name="a">O'zbekiston</a>
+            <a href="#" name="a">Italiya</a>
+            <a href="#" name="a">Qirg'iziston</a>
+            <a href="#" name="a">Polsha</a>
+            <a href="#" name="a">Yangi Zelandiya</a>
+            <a href="#" name="a">AQSh</a>
+            <a href="#" name="a">Germaniya</a>
+            <a href="#" name="a">Fransiya</a>
+            <a href="#" name="a">Rossiya</a>
+            <a href="#" name="a">Yaponiya</a>
+            <a href="#" name="a">Kanada</a>
+            <a href="#" name="a">Britaniya</a>
+            <a href="#" name="a">Armaniston</a>
+            <a href="#" name="a">Braziliya</a>
+            <a href="#" name="a">Turkiya</a>
+            <a href="#" name="a">Hindiston</a>
+            <a href="#" name="a">Isroil</a>
+            <a href="#" name="a">Belgiya</a>
+            <a href="#" name="a">Avstraliya</a>
+            <a href="#" name="a">Janubiy Afrika</a>
+            <a href="#" name="a">Ispaniya</a>
+            <a href="#" name="a">Janubiy Koreya</a>
+            <a href="#" name="a">Ukraina</a>
+            <a href="#" name="a">Shvetsariya</a>
+            <a href="#" name="a">Gollandiya</a>
+            <a href="#" name="a">Pokiston</a>
+            <a href="#" name="a">Vengriya</a>
+            <a href="#" name="a">Avstriya</a>
+            <a href="#" name="a">Chexiya</a>
+            <a href="#" name="a">Suriya</a>
+            <a href="#" name="a">Niderlandlar</a>
+            <a href="#" name="a">Daniya</a>
+            <a href="#" name="a">Eron</a>
+            <a href="#" name="a">Meksika</a>
+            <a href="#" name="a">Norvegiya</a>
+            <a href="#" name="a">Iroq</a>
+            <a href="#" name="a">Tailand</a>
+            <a href="#" name="a">Filipinlar</a>
+            <a href="#" name="a">Yamaniston</a>
+            <a href="#" name="a">Misir</a>
+            <a href="#" name="a">Saudiya Arabistoni</a>
+            <a href="#" name="a">Portugaliya</a>
+            <a href="#" name="a">Vetnam</a>
+            <a href="#" name="a">Quvayt</a>
+            <a href="#" name="a">Maroko</a>
+            <a href="#" name="a">Afg'oniston</a>
+            <a href="#" name="a">Janubiy Sudan</a>
+            <a href="#" name="a">Somali</a>
+            <a href="#" name="a">Angola</a>
+            <a href="#" name="a">Etiopiya</a>
+            <a href="#" name="a">Gayona</a>
+            <a href="#" name="a">Eritrea</a>
+            <a href="#" name="a">Indoneziya</a>
+            <a href="#" name="a">Tunisiya</a>
+            <a href="#" name="a">Kuba</a>
+            <a href="#" name="a">Grenlandiya</a>
+            <a href="#" name="a">Madagaskar</a>
+            <a href="#" name="a">Botsvana</a>
+            <a href="#" name="a">Mozambik</a>
+            <a href="#" name="a">Kongu Demokratik Respublikasi</a>
+            <a href="#" name="a">Zambiya</a>
+            <a href="#" name="a">Zimbobve</a>
+            <a href="#" name="a">Chili</a>
+            <a href="#" name="a">Oman</a>
+            <a href="#" name="a">Kamer</a>
+            <a href="#" name="a">Liviya</a>
+            <a href="#" name="a">Gvineya</a>
+            <a href="#" name="a">Mali</a>
+            <a href="#" name="a">Malavi</a>
+            <a href="#" name="a">Senegal</a>
+            <a href="#" name="a">Ruanda</a>
+            <a href="#" name="a">Benin</a>
+            <a href="#" name="a">Burundi</a>
+            <a href="#" name="a">Gvineya-Bisso</a>
+            <a href="#" name="a">Namibia</a>
+            <a href="#" name="a">Tayvan</a>
+            <a href="#" name="a">Surinam</a>
+            <a href="#" name="a">Xorvatiya</a>
+            <a href="#" name="a">Livan</a>
+            <a href="#" name="a">Luksemburg</a>
+            <a href="#" name="a">Fijili</a>
+            <a href="#" name="a">Butandan</a>
+            <a href="#" name="a">Kirgiziston</a>
+            <a href="#" name="a">Banngladeş</a>
+            <a href="#" name="a">Butan</a>
+            <a href="#" name="a">Baham</a>
+            <a href="#" name="a">Barber</a>
+            <a href="#" name="a">Barbados</a>
+            <a href="#" name="a">Bahreyn</a>
+            <a href="#" name="a">Baltik</a>
+            <a href="#" name="a">Banguladesh</a>
+            <a href="#" name="a">Belarus</a>
+            <a href="#" name="a">Belgiya</a>
+            <a href="#" name="a">Boliviya</a>
+            <a href="#" name="a">Bosniya va Gertsegovina</a>
+            <a href="#" name="a">Botsuona</a>
+            <a href="#" name="a">Bruney</a>
+            <a href="#" name="a">Burkina-Faso</a>
+            <a href="#" name="a">Burundi</a>
+            <a href="#" name="a">Kabo-Verde</a>
+            <a href="#" name="a">Kambodja</a>
+            <a href="#" name="a">Kamerun</a>
+            <a href="#" name="a">Kanada</a>
+            <a href="#" name="a">Merkaz Afrika Respublikasi</a>
+            <a href="#" name="a">Chod</a>
+            <a href="#" name="a">Şili</a>
+            <a href="#" name="a">Xitoy</a>
+            <a href="#" name="a">Kolumbiya</a>
+            <a href="#" name="a">Komor</a>
+            <a href="#" name="a">Kongp</a>
+            <a href="#" name="a">Kosta-Rika</a>
+            <a href="#" name="a">Kot-d'lvuar</a>
+            <a href="#" name="a">Xorvatiya</a>
+            <a href="#" name="a">Kuba</a>
+            <a href="#" name="a">Qibr</a>
+            <a href="#" name="a">Chexiya</a>
+            <a href="#" name="a">Daniya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/search.js"></script>
+  </body>
+</html>

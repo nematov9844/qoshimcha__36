@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Todo List</title>
+  <link rel="stylesheet" href="../css/todo.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Virtual Todo List</h1>
+
+    <div class="new-task-container">
+      <input type="text" id="new-task" placeholder="Yangi vazifa qo'shing">
+      <button id="add-task">Qo'shish</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-button" data-filter="all">Hammasi</button>
+      <button class="filter-button" data-filter="uncompleted">Bajarilmagan</button>
+      <button class="filter-button" data-filter="completed">Bajarilgan</button>
+    </div>
+
+    <div id="task-list"></div>
+  </div>
+
+  <script src="../js/todo.js"></script>
+</body>
+</html>
