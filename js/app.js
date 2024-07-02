@@ -9,7 +9,7 @@ form.addEventListener('submit', (event) => {
   const password = passwordInput.value;
 
   if (username === 'admin' && password === 'admin') {
-    window.location.href = '../pages/login.html';
+    window.location.href = '../pages/photo.html';
   } else {
     alert(`foydalanuvchi ${username}si no'tog'ri yoki parol ${password} noto'g'ri`);
   }
